@@ -1,0 +1,350 @@
+body{
+  background-color: #454E57;
+  color:#C1C1C1; 
+  width:75vw;
+  font-size:1.7vw;
+  align-self: auto;
+  margin:0 auto;
+  font-family: sans-serif;
+}
+.header{
+  text-align: center;
+  color: white;
+  padding-top:3vw;
+}
+.header-links{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+margin-top:2vw;
+padding:0
+}
+.header-links li{
+ list-style: none;
+ align-self: center;
+ justify-self: center;
+
+}
+.header-links a,.navigation-container a{
+  color:white;
+  text-decoration: none;
+}
+.header-links a:hover{
+
+  color:#008CBA;
+  font-weight: bolder;
+}
+input{
+    background-color: transparent;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #656C74 3px;
+    color: #eeeeee;
+    padding-top: 30px; 
+}
+
+.name div,.phone-number div,.adderess div {
+    position: relative;
+}
+
+.name div label,.phone-number label,.adderess label{  
+    visibility: hidden;
+    position: absolute;
+    top: 6px;
+    left:0;
+    transition: all 200ms;    
+    color:#008CBA;
+    font-weight: bolder;
+}
+
+input:not(:placeholder-shown) + label,
+input:focus + label {
+    top: 0;
+    margin-top: 5px; 
+    cursor: pointer;
+    font-size: 1vw;
+    visibility: visible;
+}
+header{
+    text-align: center;
+    color: white;
+}
+.headings h4 {
+    border-bottom-style: solid;
+    border-bottom-color: #296C86;
+    border-bottom-width: thick;
+    color:white;
+    padding-bottom:20px;
+    padding-top: 20px;
+}
+.home h1{
+  text-align: center;
+  color:white;
+  padding-top:20vw;
+  width:50vw;
+  margin:0 auto;
+}
+h4{
+    padding-top: 20px;
+}
+.PersonalInfo,.portfolio,.skills-location,.home{ 
+  padding-bottom:4vw;
+  
+  }
+.personal-container1{
+    display:inline-flex;
+    width:100%;    
+}
+ .personal-container1 .name{
+    display:inline-grid;
+    width: 70%;
+    padding-right:10px;
+}
+.personal-container1 .name input{
+    width: 52vw;
+}
+
+.personal-container1 .phone-number input{
+    width:22vw;
+}
+#adderess input{
+    width:100%;
+}
+ .personal-container2 .adderess{
+    display:inline-grid;
+    width:100%;
+    padding-top:30px;
+}
+.personal-container2 .adderess .place{
+    display:inline-flex;
+    padding-top:30px;    
+}
+.personal-container2 .adderess .place  input{
+    margin-right: 10vw;
+    margin-bottom: 2vw;
+    width: 95%;          
+}
+input[type="radio"]{
+    visibility: hidden;
+    width: 0;
+    height:0;
+    margin: 0;
+}
+.radio{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-column-gap: 1vw;
+    width:70vw;
+    margin:0 auto;
+ 
+}
+.radio input[type="radio"] + label{
+    
+    border:1px solid #ccc ;
+    color: #ccc;
+    padding: 1.7vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px 2px;
+    cursor: pointer;
+    width:14vw;
+
+}
+.radio #btn1{
+    width:1vw;
+}
+.radio input[type="radio"]:checked + label{
+    background-color: #008CBA; 
+    border: 1px solid #ccc ;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+input[type="checkbox"]
+{
+    visibility: hidden;
+    float:left;
+    color:white;
+    cursor:pointer;
+    margin-bottom: 15px;    
+    width: 20px;   
+}
+input[type="checkbox"]:before{
+    content:" ";
+    border:1px solid #ccc ;
+    width:15px;
+    height:15px;
+    visibility: visible;
+    display:inline-block;
+    margin-right: 10px;
+    cursor:pointer;
+}
+input[type="checkbox"]:checked:before{
+    content:"\2714\fe0e ";
+    font-weight: bold;
+    color:black;
+    background-color: #ccc;
+    cursor:pointer;
+}
+.check-box{
+    display:inline-flex;
+    width: 100%;
+}
+.check-box .left{
+    display: inline-block;
+    width:50%;
+}
+.check-box .right{    
+    display: inline;
+}
+.right-checkbox{
+    margin-top:15px;
+}
+.left-checkbox, .right-checkbox{
+    display:flex;
+    flex-direction: column;
+}
+.checkbox input {
+    position: absolute;
+    opacity: 1;
+    cursor: pointer;
+}
+.checkbox input:checked ~ .checkmark {
+    background-color: #ccc;
+}
+.portfolio textarea{
+    width:100%;
+    background-color: #454E57;   
+    height:150px;
+    margin-top:50px;
+    border:2px solid #656C74;
+}
+.portfolio input{
+    width:100%;
+}
+.submit-button{
+    background-color: #008CBA; 
+    color: white;
+    padding: 1.3vw 3vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;  
+    margin: 2vw 33vw;
+    border:none;
+    font-size:1.5vw;
+    cursor: pointer;
+    border:0.05vw solid #656C74; 
+    border-radius:1vw;
+}
+.submit-button:disabled,
+.submit-button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+.copyright-container p,.copyright-container div,.copyright-container img{
+
+  align-self: center;
+}
+p{
+  font-size: 1.15vw;
+}
+.copyright-container p{
+  margin-left:5vw;
+}
+.copyright-container .copyright-icons .mediaText{
+  visibility: hidden;
+  width: 7vw;
+  background-color: #929292;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 90%;
+  left: 100%;
+  margin-left: -30px;
+}
+.copyright-container{
+  width:65vw;
+  bottom: 0; 
+  width: 75vw;   
+  margin:0 auto;
+  opacity:05;
+  display:grid;
+  grid-template-columns: 50% 40% 10%;
+  color:#929292;
+  background-color: #252525;
+} 
+
+.copyright-container .copyright-icons .media:hover .mediaText{
+  visibility: visible;
+}
+.copyright-container .copyright-icons i:hover{
+  color:#EFEFEF;
+}
+
+.invalid span, span{ 
+    color:red;
+    font-size: 1vw;
+}
+.checkboxes{
+    margin-bottom: 3vw;
+}
+
+
+.btn-grp{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 17vw;
+    margin: 2vw auto;
+    grid-column-gap: 1vw;
+}
+.buttons,.next-button,.start-button{
+    background-color: #008CBA; 
+    border: none;
+    color: white;
+    padding: 1vw 2vw;
+    border-radius: 1vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.4vw;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.start-button{
+    margin-left:32vw;
+}
+.previous-button{
+    background-color: #ccc; 
+    border: none; 
+    border-radius: 1vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.4vw;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.previous-button:hover{
+    background-color:#008CBA ;
+    color:#ccc;  
+}
+.buttons:hover,.next-button:hover {
+    background-color: #ccc;
+    color:#008CBA;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+@media screen and (max-width: 800px) {
+    
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+   
+  }
